@@ -7,9 +7,9 @@
 A 4 KB Python chess engine for make.fun's tiny-chess-01 bounty: alpha-beta
 search with quiescence, a transposition table, null-move pruning,
 piece-square tables and pawn-structure evaluation, on a fixed node budget
-(deterministic, no clock, no randomness). `main.py` is the whole engine,
-packed with `lzma`; the unpacked source is a single-file 0x88-board engine
-written for this bounty.
+(deterministic, no clock, no randomness). `main.py` unpacks the engine
+from `engine.b85` (lzma + base85, split into lines) at startup; the
+unpacked source is a single-file 0x88-board engine written for this bounty.
 
 ## Run it
 
